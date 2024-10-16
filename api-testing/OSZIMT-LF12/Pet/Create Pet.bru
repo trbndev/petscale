@@ -1,0 +1,21 @@
+meta {
+  name: Create Pet
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/pet
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userId": "d77ee20e-d24c-4be6-a968-a5b71093c06b",
+    "name": "Theo",
+    "species": "Hamster",
+    "breed": "Zwerghamster",
+    "birthDate": "2024-10-16"
+  }
+}

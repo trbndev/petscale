@@ -1,0 +1,18 @@
+meta {
+  name: Update Weight
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/api/weight/43201538-600d-49bd-9c95-0c62016157f2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "weight": 500.8,
+    "date": "1900-01-01"
+  }
+}

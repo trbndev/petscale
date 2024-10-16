@@ -1,0 +1,20 @@
+meta {
+  name: Update Pet
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/api/pet/651b4569-ffbb-4d3f-a677-85ff83c3a615
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Peter",
+    "species": "Hund",
+    "breed": "Bernhadiner",
+    "birthDate": "2022-10-16"
+  }
+}

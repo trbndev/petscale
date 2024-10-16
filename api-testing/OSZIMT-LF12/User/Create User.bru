@@ -1,0 +1,18 @@
+meta {
+  name: Create User
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "max@musterman.de",
+    "name": "Max Mustermann"
+  }
+}

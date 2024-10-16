@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "OSZIMT-LF12",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

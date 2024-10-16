@@ -1,0 +1,19 @@
+meta {
+  name: Create Weight
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/weight
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "weight": 4.8,
+    "date": "2024-10-16",
+    "petId": "ed5c752b-19fb-43b8-a588-338a623eb507"
+  }
+}
