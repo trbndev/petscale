@@ -8,14 +8,12 @@ export function cn(...inputs: ClassValue[]) {
 
 export const defaultUserID = "d0ca1671-6a95-40c0-9727-0fbd061cb637";
 export async function ensureDefaultUserExists() {
-	// Check if the user already exists
 	const existingUser = await prisma.user.findUnique({
 		where: {
 			id: defaultUserID,
 		},
 	});
 
-	// If the user does not exist, create them
 	if (!existingUser) {
 		const defaultUser = await prisma.user.create({
 			data: {
@@ -31,6 +29,5 @@ export async function ensureDefaultUserExists() {
 		return defaultUser;
 	}
 
-	console.log("Default user already exists:", existingUser);
 	return existingUser;
 }
