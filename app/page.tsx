@@ -8,7 +8,7 @@ import {
 import { WeightChart } from "@/components/weight-chart";
 import { prisma } from "@/lib/prisma";
 
-function calculateStats(
+export function calculateStats(
 	weights: {
 		weight: number;
 		id: string;
