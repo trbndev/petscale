@@ -43,7 +43,6 @@ export function WeightChart({
 	weights,
 	chartTitle = "Pet Weight Chart",
 	description = "Weight over time (kg)",
-	trendingPercentage = 5.2,
 }: WeightChartProps) {
 	// Transforming the weights array for recharts
 	const chartData = weights
@@ -54,18 +53,19 @@ export function WeightChart({
 		}));
 
 	return (
-		<Card className="w-1/3">
+		<Card className="w-full h-64">
 			<CardHeader>
 				<CardTitle>{chartTitle}</CardTitle>
 				<CardDescription>{description}</CardDescription>
 			</CardHeader>
-			<CardContent>
-				<ChartContainer config={defaultChartConfig}>
+			<CardContent className="h-64 w-full">
+				<ChartContainer className="h-32 w-full" config={defaultChartConfig}>
 					<LineChart
 						data={chartData}
 						margin={{
 							left: 12,
 							right: 12,
+							top: 16,
 						}}
 					>
 						<CartesianGrid vertical={false} />
@@ -83,7 +83,7 @@ export function WeightChart({
 						/>
 						<YAxis
 							label={{
-								value: "Weight (kg)",
+								value: "Weight kg",
 								angle: -90,
 								position: "insideLeft",
 							}}
@@ -110,15 +110,6 @@ export function WeightChart({
 					</LineChart>
 				</ChartContainer>
 			</CardContent>
-			{/*<CardFooter className="flex-col items-start gap-2 text-sm">
-				<div className="flex gap-2 font-medium leading-none">
-					Trending up by {trendingPercentage}% this month{" "}
-					<TrendingUp className="h-4 w-4" />
-				</div>
-				<div className="leading-none text-muted-foreground">
-					Showing weight changes over the last 6 months
-				</div>
-			</CardFooter>*/}
 		</Card>
 	);
 }
