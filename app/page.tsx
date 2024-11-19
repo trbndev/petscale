@@ -64,14 +64,14 @@ export default async function Home() {
 						<h2 className="text-2xl font-semibold">
 							{pet.name} - {pet.species}
 						</h2>
-						<WeightChart
-							weights={pet.weights}
-							chartTitle={`${pet.name}'s Weight`}
-							description="Weight over time"
-							trendingPercentage={
-								((stats.avg - stats.min) / stats.min) * 100 || 0
-							}
-						/>
+						<div className="w-full h-64">
+							<WeightChart
+								weights={pet.weights}
+								chartTitle={`${pet.name}'s Weight`}
+								description="Weight over time"
+							/>
+						</div>
+
 						<div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
 							<Card>
 								<CardHeader>
@@ -126,7 +126,6 @@ export default async function Home() {
 			})}
 			<hr />
 			<h2 className="text-3xl font-mono font-semibold">Debug data</h2>
-
 			<Card>
 				<CardHeader>
 					<CardTitle>Pets</CardTitle>
