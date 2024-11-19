@@ -28,7 +28,7 @@ export function CreatePetForm() {
 		<form>
 			<Dialog>
 				<DialogTrigger asChild>
-					<Button variant="outline" className="gap-x-2">
+					<Button variant="default" className="gap-x-2">
 						<PlusCircleIcon className="w-4 h-4" />
 						Add pet
 					</Button>

@@ -39,7 +39,7 @@ export function DeletePetForm({ pets }: DeletePetFormProps) {
 		<form>
 			<Dialog>
 				<DialogTrigger asChild>
-					<Button variant="outline" className="gap-x-2">
+					<Button variant="destructive" className="gap-x-2">
 						<TrashIcon className="w-4 h-4" />
 						Delete pet
 					</Button>
