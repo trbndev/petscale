@@ -46,7 +46,7 @@ export function CreatePetForm() {
 								Name
 							</Label>
 							<Input
-								id="name"
+								id="pet-name"
 								value={newPetName}
 								onInput={(e) => setNewPetName(e.currentTarget.value)}
 								className="col-span-3"
