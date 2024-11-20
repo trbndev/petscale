@@ -1,3 +1,5 @@
+[PROJECT DOCUMENTATION](DOCUMENTATION.md) | [API DOCUMENTATION](API.md)
+
 # 🐕⚖️ PetScale
 
 **PetScale** is a simple and interactive weight tracking application for pet owners. It provides insightful metrics and recommendations based on the weight trends of pets. The app is designed with a clean interface for tracking, adding, and deleting pet weight data efficiently.
