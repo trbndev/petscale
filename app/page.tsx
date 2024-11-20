@@ -64,9 +64,7 @@ export default async function Home() {
 							<Card>
 								<CardHeader>
 									<CardTitle>Weight Range</CardTitle>
-									<CardDescription>
-										Difference between max and min
-									</CardDescription>
+									<CardDescription>Range between max and min</CardDescription>
 								</CardHeader>
 								<CardContent>
 									<p>{stats.variation} kg</p>
