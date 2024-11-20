@@ -2,6 +2,7 @@
 
 **PetScale** is a simple and interactive weight tracking application for pet owners. It provides insightful metrics and recommendations based on the weight trends of pets. The app is designed with a clean interface for tracking, adding, and deleting pet weight data efficiently.
 
+
 ## Features ✨
 
 1. **Dynamic Weight Tracking**:
@@ -24,6 +25,7 @@
 4. **Scalable API**:
    - RESTful API endpoints for interacting with users, pets, and weights data.
    - Supports JSON requests and responses.
+
 
 ## Tech Stack 🛠️
 
@@ -59,6 +61,10 @@
 | `PUT`  | `/pet/[petId]`        | Update a specific pet.            |
 | `DELETE` | `/pet/[petId]`      | Delete a specific pet.            |
 
+For a visual representation of the POST `/api/pet` flow, refer to the sequence diagram below:
+
+![POST /api/pet Sequence Diagram](UML-Sequence-Diagram_POST-api-pet.drawio.png)
+
 
 ## Project Setup 🚀
 
@@ -88,7 +94,6 @@
    pnpm prisma db push
    ```
 
-
 ## Running the Application 🏃‍♂️
 
 ### Development Mode
@@ -104,7 +109,20 @@ pnpm build
 pnpm start
 ```
 
+## Unit Tests 🧪
+
+The project includes unit tests for critical functionalities:
+
+- **Location**: `lib/analytics.test.ts`
+- **Testing Framework**: [Vitest](https://vitest.dev/)
+
+### Running Unit Tests
+```bash
+pnpm test
+```
+
 ## How to Use 🐕🐈
+
 1. **Track Weight**:
    - Use the `Track Weight` button to log your pet's weight.
 2. **Add Pet**:
@@ -112,10 +130,27 @@ pnpm start
 3. **Delete Pet**:
    - Remove a pet using the `Delete Pet` button. All associated weight data will also be deleted.
 
+## Folder Structure 🗂️
 
-## Screenshot 📸
+```plaintext
+.
+├── API.md
+├── api-testing
+│   ├── OSZIMT-LF12
+│   │   ├── Pet/
+│   │   ├── User/
+│   │   └── Weight/
+├── app
+│   ├── api/
+│   ├── components/
+│   ├── lib/
+├── prisma/
+├── tests/
+```
 
-![PetScale UI](image.png)
+- **API Documentation**: Detailed in `API.md`.
+- **Unit Tests**: Available in `lib/analytics.test.ts`.
+- **Integration Tests**: Bruno-compatible files in `api-testing/OSZIMT-LF12`.
 
 
 ## Contributors 🤝

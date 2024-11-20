@@ -2,8 +2,6 @@
 
 This document provides an overview of the API endpoints, methods, request formats, and responses.
 
----
-
 ## Endpoints Overview
 ### Weight (`/weight`)
 - **GET**: Fetch all weight records.
@@ -18,8 +16,6 @@ This document provides an overview of the API endpoints, methods, request format
 - **PUT** (by `petId`): Update a specific pet.
 - **GET** (by `petId`): Fetch a specific pet.
 - **DELETE** (by `petId`): Delete a specific pet.
-
----
 
 ## Endpoint Details
 
@@ -69,8 +65,10 @@ Create a new weight record.
   }
 }
 ```
+For a visual representation of the POST `/api/pet` flow, refer to the sequence diagram below:
 
----
+![POST /api/pet Sequence Diagram](UML-Sequence-Diagram_POST-api-pet.drawio.png)
+
 
 #### **PUT** `/weight/[weightId]`
 Update a specific weight record.
@@ -96,8 +94,6 @@ Update a specific weight record.
 }
 ```
 
----
-
 #### **GET** `/weight/[weightId]`
 Fetch a specific weight record.
 
@@ -114,8 +110,6 @@ Fetch a specific weight record.
 }
 ```
 
----
-
 #### **DELETE** `/weight/[weightId]`
 Delete a specific weight record.
 
@@ -126,8 +120,6 @@ Delete a specific weight record.
   "data": {}
 }
 ```
-
----
 
 ### Pet (`/pet`)
 
@@ -150,8 +142,6 @@ Fetch all pets.
   ]
 }
 ```
-
----
 
 #### **POST** `/pet`
 Create a new pet.
@@ -182,8 +172,6 @@ Create a new pet.
 }
 ```
 
----
-
 #### **PUT** `/pet/[petId]`
 Update a specific pet.
 
@@ -212,8 +200,6 @@ Update a specific pet.
 }
 ```
 
----
-
 #### **GET** `/pet/[petId]`
 Fetch a specific pet.
 
@@ -232,8 +218,6 @@ Fetch a specific pet.
 }
 ```
 
----
-
 #### **DELETE** `/pet/[petId]`
 Delete a specific pet.
 
@@ -244,8 +228,6 @@ Delete a specific pet.
   "data": {}
 }
 ```
-
----
 
 ### Deprecated Endpoint: User (`/user`)
 This endpoint is deprecated as the application now uses a single default user. Direct manipulation of users may still be supported but will not be documented.

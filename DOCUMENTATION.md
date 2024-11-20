@@ -25,6 +25,12 @@ PetScale is a comprehensive pet weight tracking application. The platform enable
 - **Directory**: `api-testing/OSZIMT-LF12`
 - Organized by entity (`Pet`, `User`, `Weight`) with `.bru` files (used for API testing tools like Bruno or Postman).
 
+
+#### Unit Tests
+- **Directory**: `lib/`
+- **File**: `analytics.test.ts`
+- **Purpose**: Tests for weight analytics and calculations.
+
 ### **API Implementation**
 - **Directory**: `app/api/`
 - **Endpoints**:
@@ -42,6 +48,9 @@ PetScale is a comprehensive pet weight tracking application. The platform enable
 - **Database**: SQLite (`dev.db`) for storing user, pet, and weight data.
 - Prisma schema (`schema.prisma`) defines database relationships.
 
+### UML Diagrams
+- **File**: `UML-Sequence-Diagram_POST-api-pet.drawio.png`
+- **Purpose**: Visual representation of the POST `/api/pet` endpoint process.
 
 ## **API Documentation**
 
@@ -54,6 +63,9 @@ Refer to `API.md` for detailed documentation of all endpoints. Below is a summar
 | **Pet**    | `/pet`, `/pet/[petId]`          | GET, POST, PUT, DELETE |
 | **Weight** | `/weight`, `/weight/[weightId]` | GET, POST, PUT, DELETE |
 
+### Deprecated `/user` Endpoint
+
+The `/user` endpoint is deprecated and used only for testing purposes. All features now operate with a default user setup.
 
 ## **API Testing**
 
@@ -74,6 +86,23 @@ API tests are located in the `api-testing/OSZIMT-LF12` directory, structured as 
 |            | `Delete Weight.bru`      | Delete a weight record         |
 
 These files can be imported into API testing tools like Postman or Bruno for integration tests.
+
+### **Unit Tests**
+
+Unit tests are implemented to verify the functionality of core features like analytics and weight calculations.
+
+#### **Location**
+- Test file: `lib/analytics.test.ts`
+
+#### **Framework**
+- The tests are written using [Vitest](https://vitest.dev/).
+
+#### **Running Unit Tests**
+To execute unit tests, run the following command:
+
+```bash
+pnpm test
+```
 
 
 ## **Components Overview**
