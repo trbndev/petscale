@@ -156,3 +156,4 @@ pnpm test
 ## Contributors 🤝
 
 - **Torben Haack** - *Developer*
+- **ChatGPT** - *Used for assistance in writing documentation*
