@@ -45,7 +45,7 @@ export async function PUT(request: Request, { params }: PetParams) {
 	);
 }
 
-export async function GET(request: Request, { params }: PetParams) {
+export async function GET(_: Request, { params }: PetParams) {
 	const petId = params.petId;
 
 	const pet = await prisma.pet.findFirst({
@@ -70,7 +70,7 @@ export async function GET(request: Request, { params }: PetParams) {
 	);
 }
 
-export async function DELETE(request: Request, { params }: PetParams) {
+export async function DELETE(_: Request, { params }: PetParams) {
 	const petId = params.petId;
 
 	const pet = await prisma.pet.findFirst({
