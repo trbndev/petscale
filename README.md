@@ -14,7 +14,7 @@
      - Min Weight
      - Max Weight
      - Average Weight
-     - Weight Variation
+     - Weight Range
      - Recommendations for improving pet health.
 
 3. **CRUD Operations**:
