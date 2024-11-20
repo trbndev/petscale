@@ -1,6 +1,6 @@
 "use client";
 
-import { onTrackWeightDialogSubmit } from "@/components/dialogs/track-weight-server";
+import { onTrackWeightDialogSubmit } from "@/components/dialogs/server-actions";
 import { Button } from "@/components/ui/button";
 import {
 	Dialog,

@@ -1,6 +1,8 @@
-import { CreatePetDialog } from "@/components/dialogs/create-pet";
-import { DeletePetDialog } from "@/components/dialogs/delete-pet";
-import { TrackWeightDialog } from "@/components/dialogs/track-weight";
+import {
+	CreatePetDialog,
+	DeletePetDialog,
+	TrackWeightDialog,
+} from "@/components/dialogs";
 
 export default function Header() {
 	return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { onCreatePetDialogSubmit } from "@/components/dialogs/create-pet-server";
+import { onCreatePetDialogSubmit } from "@/components/dialogs/server-actions";
 import { Button } from "@/components/ui/button";
 import {
 	Dialog,

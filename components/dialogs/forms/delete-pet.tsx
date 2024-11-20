@@ -20,7 +20,7 @@ import {
 import { TrashIcon } from "lucide-react";
 import { type SetStateAction, useState } from "react";
 
-import { deletePet } from "@/components/dialogs/delete-pet-server";
+import { deletePet } from "@/components/dialogs/server-actions";
 import { DialogClose } from "@radix-ui/react-dialog";
 
 interface DeletePetFormProps {
