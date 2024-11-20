@@ -37,6 +37,13 @@ export async function POST(request: Request) {
 			);
 		}
 
+		if (body.weight <= 0) {
+			return Response.json(
+				{ message: "Negative weight not allowed.", data: {} },
+				{ status: 400 },
+			);
+		}
+
 		// Create a new weight entry for the pet
 		const weight = await prisma.weight.create({
 			data: {

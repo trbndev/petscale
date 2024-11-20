@@ -34,6 +34,13 @@ export async function PUT(request: Request, { params }: WeightParams) {
 			);
 		}
 
+		if (body.weight <= 0) {
+			return Response.json(
+				{ message: "Negative weight not allowed.", data: {} },
+				{ status: 400 },
+			);
+		}
+
 		return Response.json(
 			{
 				message: "Successfully updated weight data.",
