@@ -39,7 +39,7 @@ export async function PUT(request: Request, { params }: UserParams) {
 	);
 }
 
-export async function GET(request: Request, { params }: UserParams) {
+export async function GET(_: Request, { params }: UserParams) {
 	const userId = params.userId;
 
 	const user = await prisma.user.findFirst({
@@ -64,7 +64,7 @@ export async function GET(request: Request, { params }: UserParams) {
 	);
 }
 
-export async function DELETE(request: Request, { params }: UserParams) {
+export async function DELETE(_: Request, { params }: UserParams) {
 	const userId = params.userId;
 
 	const user = await prisma.user.findFirst({

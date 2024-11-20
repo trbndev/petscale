@@ -59,7 +59,7 @@ export async function PUT(request: Request, { params }: WeightParams) {
 	}
 }
 
-export async function GET(request: Request, { params }: WeightParams) {
+export async function GET(_: Request, { params }: WeightParams) {
 	const weightId = params.weightId;
 
 	try {
@@ -95,7 +95,7 @@ export async function GET(request: Request, { params }: WeightParams) {
 	}
 }
 
-export async function DELETE(request: Request, { params }: WeightParams) {
+export async function DELETE(_: Request, { params }: WeightParams) {
 	const weightId = params.weightId;
 
 	try {
