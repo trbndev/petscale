@@ -89,10 +89,7 @@ export function WeightChart({
 							axisLine={false}
 							tickMargin={8}
 						/>
-						<ChartTooltip
-							cursor={false}
-							content={<ChartTooltipContent hideLabel />}
-						/>
+						<ChartTooltip cursor={false} content={<ChartTooltipContent />} />
 						<Line
 							dataKey="weight"
 							type="natural"
