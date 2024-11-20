@@ -12,7 +12,7 @@ import { prisma } from "@/lib/prisma";
 export default async function Home() {
 	const pets = await prisma.pet.findMany({
 		include: {
-			weights: true, // Include weights for each pet
+			weights: true,
 		},
 	});
 	return (
