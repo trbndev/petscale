@@ -95,6 +95,10 @@ export function TrackWeightForm(props: TrackWeightFormProps) {
 										event.currentTarget.value,
 									);
 
+									if (newWeight <= 0) {
+										setWeight(0.1);
+									}
+
 									setWeight(newWeight);
 								}}
 								className="col-span-3"
